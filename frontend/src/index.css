@@ -1,0 +1,169 @@
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans:wght@300;400;500;600;700&display=swap');
+*{
+  color: #fff;
+  font-family: 'Open Sans', sans-serif;
+}
+
+body{
+  margin: 0;
+  padding: 0;
+}
+
+
+
+.app{
+  background-color: #343541;
+  display: flex;
+
+}
+
+.side-bar{
+  background-color: #202123;
+  height: 100vh;
+  /* width: 244px; */
+  min-width: 270px;
+  width: 27%;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+
+}
+
+.chatImg{
+  object-fit: cover;
+  width: 3.0rem;
+  margin-right: 2rem;
+  border-radius: 0.5rem;
+}
+
+button{
+  border: solid 0.5px rgba(255, 255, 255, 0.5);
+  background-color: transparent;
+  border-radius: 5px;
+  padding: 10px;
+  margin: 10px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 5px;
+  cursor: pointer;
+}
+
+.history-btn{
+  border: solid 0.5px rgba(255, 255, 255, 0.5);
+  background-color: transparent;
+  border-radius: 5px;
+  padding: 10px;
+  margin: 10px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+nav{
+  border-top: solid 0.5px rgba(255, 255, 255, 0.5);
+  padding: 10px;
+  margin: 10px;
+
+}
+
+.history{
+  padding: 10px;
+  margin: 10px;
+  height: 100%;
+}
+
+.history li{
+  /* to remove the default style of dot in list */
+  list-style-type: none;
+  padding: 15px 0;
+  cursor: pointer;
+}
+
+.main{
+  height: 100vh;
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: center;
+  text-align: center;
+
+}
+
+
+.info{
+  color: rgba(255, 255, 255, 0.5);
+  font-size: 11px;
+  padding: 10px;
+}
+
+.bottom-section{
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.input-container{
+  width: 100%;
+  max-width: 650px;
+  display: flex;
+  align-items: center;
+
+}
+
+input{
+  margin: 0px 30px 0px;
+  width: 80%;
+  font-size: 18px;
+  border: none;
+  background-color: rgba(255, 255, 255, 0.05);
+  padding: 12px 15px;
+  border-radius: 5px;
+  box-shadow: rgba(126, 120, 120, 0.05);
+
+}
+
+input:focus{
+  outline: none;
+}
+
+#submit{
+  font-size: 25px;
+
+  cursor: pointer;
+  margin-left: -60px;
+  margin-top: 5px;
+  
+}
+
+.feed{
+  overflow: scroll;
+  width: 80%;
+  padding: 10px;
+  align-items: center;
+}
+
+.feed::-webkit-scrollbar{
+  display: none;
+}
+
+.feed li{
+  display: flex;
+  background-color: #444654;
+  width: 80%;
+  padding: 20px;
+  margin: 20px 0;
+}
+
+.feed p{
+  color: rgba(225, 225, 225, 0.0.8);
+  font-size: 14px;
+  text-align: left;
+}
+
+.feed p.role{
+  min-width: 100px;
+}
